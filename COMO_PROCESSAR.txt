@@ -1,0 +1,30 @@
+(1) base_rotulada_estigma 			| Planilha com links da Folha e Estadão que foi rotulada pelo e serve para treino e teste do modelo
+(2) links_folha_sem_rotulo_estadao_rotulado | Planilha com links da folha sem rotulacao + links do Estadão rotulados
+(3) links_folha_sem_rotulo 			| Planilha anterior SEM os links do Estadão (NÃO USAR)
+(4) links_correio_do_povo_sem_rotulo 	| Planilha com os links do Correio do povo, todos sem rótulos
+
+
+PASSOS AGORA: 
+
+1. Processar o scrapping e tratamento de (1) novamente, dessa vez colocando os textos em dataframe apenas para garantir a organização e os futuros processamentos 
+2. Agregar ao primeiro dataframe os links do Estadão rotulados em constam em (2)
+3. Agregar todos os links sem rótulos em um dataframe (folha + Estadão(?) + Correio do Povo) para aplicar o modelo treinado neles
+4. reorganizar análise de dados em cima dos resultados
+
+
+ORDEM DE PROCESSAMENTO:
+
+
+1. s1_tratamento_texto.ipynb (coletamos os textos)
+2. s2_vetorizacao_texto.ipynb (transformamos os textos em matrizes)
+3. s3_treinamento_modelo_2.ipynb (treina o modelo e salva as predições)
+4. Entao vamos para a pasta analises_de_resultados/analises_bases_unidas
+5. s4_uniao_bases_treino_aplicacao.ipynb (para unir as bases de treino e teste e identificação de cartas do estadão)
+6. s5_organizacao_folha_opiniao_painel_leitor.ipynb (identificar o que é opiniao e o que é painel_do_leitor na folha)
+7. analise_folha.ipynb
+8. analise_painel_do_leitor_folha_completo.ipynb
+9. analise_opiniao_folha_completo.ipynb
+7. Entao vamos para a pasta analises_de_resultados/analise_painel_opiniao 
+8. analise_opiniao_estadao.ipynb
+9. analise_estadao.ipynb
+10. analise_correio_do_povo.ipynb
