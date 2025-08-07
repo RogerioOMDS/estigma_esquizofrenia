@@ -1,2 +1,2 @@
 # estigma_esquizofrenia
-A busca do estigmado uso da palavra "Esquizofrenia" em notícias jornalísticas
+A busca do estigma do uso da palavra "Esquizofrenia" em notícias jornalísticas
